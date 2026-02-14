@@ -2,10 +2,12 @@ name: Deploy Backend Lambda
 
 on:
   push:
+    
     paths:
       - "backend/process-uploaded-file/**"
     branches:
       - main
+  workflow_dispatch: 
 
 
 env:
